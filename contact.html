@@ -9,19 +9,45 @@ Description: This file defines the HTML for the "contact me" page of the portfol
 <head>
     <meta charset="utf-8">
     <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div id="contact">
-        <h1>Send me a message!</h1>
-        <form>
-            Name: <br> <input type="text" name="name" value="Ex: John Wick"> <br>
-            Email: <br> <input type="text" name="email" value="Ex: jwick3@hotmail.com"> <br>
-            Message: <br> <input type="text" name="message" value="What's on your mind?"> <br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    <!-- for the header background -->
+    <div id="header1"> </div>
+
+    <!-- empty grey box for nameplate. given more time would replace this with more efficient method -->
+    <aside>
+    </aside>
+
+    <!-- container to set text boundary -->
+    <div id="container">
+
+        <!-- create nav buttons -->
+        <ul id="navbuttons">
+            <li> <a href="index.html">About Me</a></li>
+            <li> <a href="portfolio.html">Projects</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- create header -->
+        <div id="header">
+            <h1>Alek Seawright</h1>
+        </div>
+
+        <!-- create contact box -->
+        <div id="content">
+            <div id="contact">
+                <h2>Send me a message!</h2>
+                <form>
+                    Name: <br> <input type="text" name="name" value="Ex: John Wick"> <br>
+                    Email: <br> <input type="text" name="email" value="Ex: jwick3@hotmail.com"> <br>
+                    Message: <br> <input type="text" name="message" value="What's on your mind?"> <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
 
 </body>
 
