@@ -1,84 +1,72 @@
+/* global font styling */
 body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 150%;
-    color: rgb(31, 31, 31);
+    color: rgb(65, 64, 64);
     background: darkgray;
-    
+    box-sizing: border-box;
   }
-
+ /* container font styling */
 #container {
   width: 960px;
   margin: 0 auto;
 }
 
-/* modifies header bg */
-#header1 {
+/* modifies header backgrounds */
+#headerbg {
   padding: 50px;
-  margin-bottom: -85px;
+  margin: 0px;
   background: darkslateblue;
   border-bottom: 4px solid rgb(68, 132, 228);
-}
-
-/* modifies grey box */
-aside {
-  float: left;
-  margin-left: 200px;
-  margin-top: -15px;
-  width: 320px;
-  height: 20px;
-  padding: 40px;
-  background: lightgray;
-  font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-/* modifies "Alek Seawright" text in grey box*/
-h1 {
-  font-size: 70px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: lightgray;
-  padding: 20px 0px 0px 260px;
 }
 .headerbox{
   height: 100px;
   width: 500px;
   background: rgb(68, 132, 228);
-  margin: -65px 235px;
+  position: absolute;
+  top: 0;
+}
+
+/* modifies "Alek Seawright" text in header */
+h1 {
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: lightgray;
+  position: absolute;
+  top: 0;
+  padding: 30px;
 }
 
 /* modifies navbutton box */
 #navbuttons{
-  float: right;
-  margin-top: 0px;
-  margin-right: 240px;
   font-size: 20px;
+  position: absolute;
+  margin-left: 600px;
+  top: 0px;
+  padding: 30px;
 }
-
 /* modifies navbutton text*/
-li a{
-  color: lightgray;
-  padding: 10px;
-}
-li {
-  display: inline;
-}
-li+li {border-left: 2px solid rgb(156, 155, 155)}
+li a { color: lightgray; padding: 10px; }
+li { display: inline; }
+li+li {border-left: 2px solid rgb(156, 155, 155) }
 
 /* modifies text body */
-.content-box{
-  width: 1000px;
-  border: 10px;
-  background-color: lightgray;
+#content{
+padding: 30px 30px 40px 30px;
+margin-top: 100px;
+background-color: lightgray;
+border: 2px solid rgb(139, 139, 139);
+width: 100%;
 }
-
-#content{ padding: 30px 30px 40px 30px;
-margin-top: 100px;}
+/* my pretty face */
 #headshot{
   float: left;
   margin-right: 30px;
 }
+/* "Hey there..." */
 h2 {
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -88,38 +76,78 @@ h2 {
   padding-bottom: 20px;
 }
 
+/* aligns portfolio project links into 2 columns */
 .portfolio-link2{margin-top: -235px; padding: 0px 300px;}
 .portfolio-link4{margin-top: -235px; padding: 0px 300px;}
 
+/* this is the paragraph/header divider line */
 hr {
   display: block;
   background-color: darkgrey;
-  height: 3px;
-  margin: 1em 0;
+  height: 2px;
 }
 
 /* modifies footer */
+.mainspace { margin-top: 320px; }
+.portspace { margin-top: 100px; }
+.contactspace { margin-top: 120px; }
+.footerbox{
+  height: 100px;
+  width: 100%;
+  background: darkslateblue;
+  border-top: 10px solid rgb(68, 132, 228);
+  position: absolute;
+  margin-bottom: 0;
+}
 #copyright{
   text-align: center;
   color: lightgray;
   font-size: small;
-  padding: 40px;
-}
-.footerbox{
-  height: 100px;
-  background: darkslateblue;
-  border-top: 10px solid rgb(68, 132, 228);
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
-.contactbox{
-  width: 1000px;
-  border: 10px;
-  background-color: lightgray;
+/* modifies portfolio page */
+.project-button{
+  position: relative;
+  bottom: 60px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: rgb(68, 132, 228);
+  color: lightgray;
+  width: 200px;
+  height: 40px;
+}
+/* project link spacing */
+.portfolio-link1 { margin-top: 0; }
+.portfolio-link2 { margin-top: -250px; }
+.portfolio-link3 { margin-top: 0; }
+.portfolio-link4 { margin-top: -250px; }
+
+/* text fields */
+input[type=text] {
+  width: 100%;
+  color: rgb(138, 138, 138);
+}
+input[type=submit] {
+  background-color: rgb(68, 132, 228);
+  font-size: inherit;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+input[id=message] {
+  height: 200px;
 }
 
-.portbox{
-  width: 1000px;
+/* modifies contact page */
+/* .contactbox{
   border: 10px;
   background-color: lightgray;
+  width: 100%;
 }
+.contact{
+  width: 100%;
+} */

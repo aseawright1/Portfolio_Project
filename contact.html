@@ -14,48 +14,49 @@ Description: This file defines the HTML for the "contact me" page of the portfol
 </head>
 
 <body>
-    <!-- for the header background -->
-    <div id="header1"> </div>
-
-    <!-- create header -->
-    <div id="header">
-            <h1>Alek Seawright</h1>
-    </div>
-    <div id="header">
-            <div class="headerbox">
-            </div>
-    </div>
-    
-    <!-- create nav buttons -->
-    <ul id="navbuttons">
-            <li> <a href="index.html">About Me</a></li>
-            <li> <a href="portfolio.html">Projects</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-        </ul>    
+    <!-- "Alek Seawright" header background -->
+    <div id="headerbg"> </div>
 
     <!-- container to set text boundary -->
     <div id="container">
-        <div class="contactbox">
+        <!-- create "Alek Seawright" text box -->
+        <div class="headerbox"> </div>
+        <h1>Alek Seawright</h1>
+
+        <!-- create nav buttons -->
+        <ul id="navbuttons">
+            <li> <a href="index.html">About Me</a></li>
+            <li> <a href="portfolio.html">Projects</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+
         <!-- create contact box -->
+        <div class="contactbox">
             <div id="content">
-                <div id="contact">
-                    <h2>Send me a message!</h2> <hr>
-                    <form>
-                        Name: <br> <input type="text" name="name" value="Ex: John Wick"> <br>
-                        Email: <br> <input type="text" name="email" value="Ex: jwick3@hotmail.com"> <br>
-                        Message: <br> <input type="text" name="message" value="What's on your mind?"> <br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
+                <h2>Send me a message!</h2> <hr>
+                <form>
+                    <label for="name">Name</label> </br>
+                    <input type="text" id="name" name="name" value="Ex: John Wick"> </br></br>
+                    <label for="email">Email</label> </br>
+                    <input type="text" id="email" name="email" value="Ex: jwicksdog@hotmail.com"> </br></br>
+                    <label for="message">Message</label> </br>
+                    <input type="text" id="message" name="message"> </br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
-<div id="footer">
-    <div class="footerbox">
-        <p id="copyright">
-                &copy; Alek Seawright. 2019.
-        </p>
+        <!-- push footer to bottom -->
+        <div class="contactspace"></div>
+
     </div>
-</div>
+    <!-- footer -->
+    <div id="footer">
+            <div class="footerbox">
+                <p id="copyright">
+                    &copy; Alek Seawright. 2019.
+                </p>
+            </div>
+        </div>
 </body>
 
 </html>
